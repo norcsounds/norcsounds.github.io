@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Janda-Bubble';
+    src: url('jandamanateebubble-webfont.woff2') format('woff2'),
+         url('jandamanateebubble-webfont.woff') format('woff'),
+         url('jandamanateebubble-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background-color: #e82e53;
+}
+
+.title {
+	font-size: 100px;
+	font-family: 'Janda-Bubble';
+	color: #89cff0;
+	display: flex;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.soundBlock {
+    font-size: 60px;
+    color: #1900fc;
+    font-family: 'Janda-Bubble';
+    flex-grow: 1;
+}
