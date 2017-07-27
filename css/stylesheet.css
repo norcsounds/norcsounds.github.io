@@ -5,7 +5,15 @@
          url('jandamanateebubble-webfont.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'Janda-Solid';
+    src: url('jandamanateesolid-webfont.woff2') format('woff2'),
+         url('jandamanateesolid-webfont.woff') format('woff'),
+         url('jandamanateesolid-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -14,13 +22,19 @@ body {
 
 .title {
 	font-size: 100px;
-	font-family: 'Janda-Bubble';
+	font-family: 'Janda-Solid';
+    /*text-decoration: underline;*/
+    border-style: none none dashed none;
+    padding: 30px;
+    /*border: 10px;*/
+    border-width: 10px;
 	color: #89cff0;
 	display: flex;
 	justify-content: center;
 }
 
 .container {
+    padding: 50px;
 	display: flex;
     align-content: flex-start;
     flex-flow:row wrap;
@@ -28,11 +42,26 @@ body {
 }
 
 .soundBlock {
-    font-size: 50px;
+    font-size: 60px;
     background-color: 89cff0;
     color: #1900fc;
+    font-weight: bold;
     font-family: 'Janda-Bubble';
+    /*font-family: 'Janda-Solid';*/
     flex-grow: 1;
     cursor: hand;
-    cursor: pointer;
+    cursor: pointer;    
+}
+
+/* Animations */
+.soundBlock:hover {
+    -ms-transform: scale(1.25, 1.25); /* IE 9 */
+    -webkit-transform: scale(1.25, 1.25); /* Chrome, Safari, Opera */
+    transform: scale(1.25, 1.25);
+}
+
+.soundBlock:active {
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Chrome, Safari, Opera */
+    transform: scale(0.8, 0.8);
 }
