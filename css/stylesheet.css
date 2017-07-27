@@ -22,6 +22,7 @@ body {
 
 .container {
 	display: flex;
+    align-content: flex-start;
     flex-flow:row wrap;
 	justify-content: space-around;
 }
