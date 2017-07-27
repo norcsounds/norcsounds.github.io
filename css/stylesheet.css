@@ -20,14 +20,18 @@ body {
 	justify-content: center;
 }
 
-.row {
+.container {
 	display: flex;
+    flex-flow:row wrap;
 	justify-content: space-around;
 }
 
 .soundBlock {
-    font-size: 60px;
+    font-size: 50px;
+    background-color: 89cff0;
     color: #1900fc;
     font-family: 'Janda-Bubble';
     flex-grow: 1;
+    cursor: hand;
+    cursor: pointer;
 }
