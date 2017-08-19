@@ -1,5 +1,26 @@
+var colors = ['#ffffff','#1900FC', '#39e600', '#3ed0ff', '#6a1acd',' #FF9933'];
+
+var random_color = function() {
+	return colors[Math.floor(Math.random() * colors.length)];
+}
+
+var getColor = function(i) {
+	return colors[i%colors.length];
+}
+
+var soundBlocks = document.getElementsByClassName("soundBlock");
+
+function setColors() {
+	for (i = 0; i < soundBlocks.length; i++) {
+		// soundBlocks[i].style.color = getColor(i);
+		soundBlocks[i].style.color = random_color();
+	}
+}
+
 function Alyssa1() {
 	document.getElementById('Alyssa1').play();
+	var color = random_color();
+	document.getElementById('audio-Alyssa1').style.color = color;
 }
 
 function Alyssa2() {

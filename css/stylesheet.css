@@ -44,7 +44,7 @@ body {
 .soundBlock {
     font-size: 60px;
     background-color: 89cff0;
-    color: #1900fc;
+    /*color: #1900fc;*/
     font-weight: bold;
     font-family: 'Janda-Bubble';
     /*font-family: 'Janda-Solid';*/
